@@ -11,7 +11,7 @@ class FlashTest extends TestCase
 
     public function setUp()
     {
-        $this->session = Mockery::spy('SLDesen\Flash\SessionStore');
+        $this->session = Mockery::spy('CodeMasterSolucoes\Flash\SessionStore');
 
         $this->flash = new FlashNotifier($this->session);
     }
