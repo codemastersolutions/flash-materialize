@@ -8,7 +8,7 @@ if (! function_exists('flash')) {
      * @param string|null $message
      * @param int $time
      * @param string $level
-     * @return \SLDesen\FlashMaterialize\FlashNotifier
+     * @return \CodeMasterSolucoes\FlashMaterialize\FlashNotifier
      */
     function flash($message = null, $time = 30000, $level = 'info')
     {

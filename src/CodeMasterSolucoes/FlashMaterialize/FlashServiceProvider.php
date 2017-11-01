@@ -22,12 +22,12 @@ class FlashServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(
-            'SLDesen\FlashMaterialize\SessionStore',
-            'SLDesen\FlashMaterialize\LaravelSessionStore'
+            'CodeMasterSolucoes\FlashMaterialize\SessionStore',
+            'CodeMasterSolucoes\FlashMaterialize\LaravelSessionStore'
         );
 
         $this->app->singleton('flash', function () {
-            return $this->app->make('SLDesen\FlashMaterialize\FlashNotifier');
+            return $this->app->make('CodeMasterSolucoes\FlashMaterialize\FlashNotifier');
         });
     }
 
