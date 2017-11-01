@@ -1,0 +1,39 @@
+{
+    "name": "codemastersolucoes/flash-materialize",
+    "description": "Easy flash notifications with Materialize-CSS",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gilson Gabriel",
+            "email": "gilson@codemastersolucoes.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0",
+        "laravel/framework": "5.5.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "phpunit/phpunit": "^6.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "CodeMasterSolucoes\\FlashMaterialize": "src/"
+        },
+        "files": [
+            "src/CodeMasterSolucoes/FlashMaterialize/functions.php"
+        ]
+    },
+    "minimum-stability": "beta",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CodeMasterSolucoes\\FlashMaterialize\\FlashServiceProvider"
+            ],
+            "aliases": {
+                "Flash": "CodeMasterSolucoes\\FlashMaterialize\\Flash"
+            }
+        }
+    }
+}
