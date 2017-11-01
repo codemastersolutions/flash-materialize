@@ -1,0 +1,7 @@
+/vendor
+composer.phar
+composer.lock
+.DS_Store
+.idea
+desktop.ini
+~/*/desktop.ini
